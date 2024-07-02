@@ -88,9 +88,6 @@ Pour exécuter les tests unitaires dans le dossier unit_test, utilisez la comman
 
 ## Contributors
 Ahmed Ouassou  
-
 Cindy Porfirio  
-
 Daniel Solis Lerma  
-
 Yosra Boughanja
