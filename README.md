@@ -51,10 +51,12 @@ Pour utiliser ce projet, suivez ces étapes :
 1. **Cloner le dépôt :**
    ```bash
    git clone https://github.com/AhmedProj/PrimePredict.git
+   ```
 2. **Accéder au dépôt et installer les packages nécessaires :**
    ```bash
    cd PrimePredict
    pip install -r requirements.txt
+   ```
 3. **Définir des variables d'environnement pour utiliser MLflow :**
    ```bash
    export MLFLOW_MODEL_FREQ_NAME="model_freq"
@@ -63,16 +65,19 @@ Pour utiliser ce projet, suivez ces étapes :
    export MLFLOW_MODEL_REG_VERSION=1 
 
    export MLFLOW_EXPERIMENT_NAME="experience"
+   ```
 
 5. **Lancer l'entraînement après definition des hyperparamètres dans MLproject et en se placant dans le fichier racine:**
    ```bash
    mlflow run . --env-manager=local \
     -P remote_server_uri=$MLFLOW_TRACKING_URI \
     -P experiment_name=$MLFLOW_EXPERIMENT_NAME
+   ```
 
 6. **Lancer l'entraînement parallélisé avec argo workflow avec la commande:**
    ```bash
    argo submit argo_workflows/workflow.yml
+   ```
 
 ## ETL des logs
 
@@ -83,7 +88,9 @@ Pour une bonne gestion de l'API on a ajouté un suivi des logs (probabilité de 
 
 Pour exécuter les tests unitaires dans le dossier unit_test, utilisez la commande suivante :
 
-```python file.py````
+```yml
+python file.py
+```
 
 
 ## Contributors
