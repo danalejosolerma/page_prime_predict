@@ -67,9 +67,9 @@ Pour utiliser ce projet, suivez ces étapes :
    export MLFLOW_EXPERIMENT_NAME="experience"
    ```
 
-5. **Lancer l'entraînement après definition des hyperparamètres dans MLproject et en se placant dans le fichier racine:**
+5. **Lancer l'entraînement après definition des hyperparamètres dans MLproject et en se placant dans le fichier racine, n'oubliez pas aussi de prsicer quelle pipeline d'entraînement lancer si c'est le modèle de frequence ou de regression dans le paramètre entry-point:**
    ```bash
-   mlflow run . --env-manager=local \
+   mlflow run . --env-manager=local --entry-point freq_model\
     -P remote_server_uri=$MLFLOW_TRACKING_URI \
     -P experiment_name=$MLFLOW_EXPERIMENT_NAME
    ```
