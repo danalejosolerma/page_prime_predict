@@ -9,4 +9,4 @@ description: >
 #plugins:
 #- jekyll-remote-theme
 theme: jekyll-theme-cayman
-
+repository: https://github.com/AhmedProj/PrimePredict.git
